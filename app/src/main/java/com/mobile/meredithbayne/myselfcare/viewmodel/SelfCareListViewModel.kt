@@ -1,4 +1,4 @@
-package com.mobile.meredithbayne.myselfcare.ui.selfcarelist
+package com.mobile.meredithbayne.myselfcare.viewmodel
 
 import android.arch.lifecycle.ViewModel
 

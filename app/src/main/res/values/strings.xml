@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">My Self Care</string>
+    <string name="app_name">MySelfCare</string>
+    <string name="item_category_icon">Item Category Icon</string>
+    <string name="add_item_toolbar_title">Add an item</string>
+    <string name="add_an_item_to_your_self_care_list">Add an item to your Self Care list</string>
+    <string name="type_your_self_care_item_title_here">Type your self care item title here</string>
+    <string name="category">Category</string>
+    <string name="physical">Physical</string>
+    <string name="emotional">Emotional</string>
+    <string name="social">Social</string>
+    <string name="add_item">Add</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="frequency">Frequency</string>
 </resources>

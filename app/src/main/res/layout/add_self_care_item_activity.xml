@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_item_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:hint="@string/type_your_self_care_item_title_here"/>
+
+    <TextView
+        android:id="@+id/category_header"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:text="@string/category"
+        android:textColor="@android:color/primary_text_light" />
+
+    <RadioGroup
+        android:id="@+id/category_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/physical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:checked="true"
+            android:text="@string/physical" />
+
+        <RadioButton
+            android:id="@+id/emotional"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:text="@string/emotional" />
+
+        <RadioButton
+            android:id="@+id/social"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:text="@string/social" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/frequency_header"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:text="@string/frequency"
+        android:textColor="@android:color/primary_text_light" />
+
+    <RadioGroup
+        android:id="@+id/frequency_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/daily"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:checked="true"
+            android:text="@string/daily" />
+
+        <RadioButton
+            android:id="@+id/weekly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:text="@string/weekly" />
+
+        <RadioButton
+            android:id="@+id/radButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@color/colorAccentLight"
+            android:buttonTint="@android:color/white"
+            android:text="@string/monthly" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/small_margin"
+        android:background="@color/colorAccentDark"
+        android:text="@string/add_item"
+        android:textColor="@android:color/primary_text_dark" />
+
+</LinearLayout>
