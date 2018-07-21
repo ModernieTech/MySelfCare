@@ -10,13 +10,13 @@ interface SelfCareItemDao {
     fun loadAllItems(): LiveData<List<SelfCareItem>>
 
     @Insert
-    fun insertItem(taskEntry: SelfCareItem)
+    fun insertItem(selfCareItem: SelfCareItem)
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    fun updateItem(taskEntry: SelfCareItem)
+    fun updateItem(selfCareItem: SelfCareItem)
 
     @Delete
-    fun deleteItem(taskEntry: SelfCareItem)
+    fun deleteItem(selfCareItem: SelfCareItem)
 
     @Query("SELECT * FROM items WHERE id = :id")
     fun loadItemById(id: Int): LiveData<SelfCareItem>
