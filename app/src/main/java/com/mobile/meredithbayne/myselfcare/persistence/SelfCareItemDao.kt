@@ -1,4 +1,4 @@
-package com.mobile.meredithbayne.myselfcare.database
+package com.mobile.meredithbayne.myselfcare.persistence
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.*
